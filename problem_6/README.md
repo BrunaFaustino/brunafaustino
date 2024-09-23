@@ -45,10 +45,26 @@ This document is for the Scoreboard API module. It is used to update user scores
     ```
 
 ## Execution Flow Diagram
-![Execution Flow Diagram](images/execution_flow_diagram.png)
+```mermaid
+graph LR
+    A[User Completes Action] --> B[Front-end Sends API Call]
+    B --> C[API Validates Request]
+    C -->|Valid| D[Update Score in Database];
+    D --> E[Send Response to Front-end]
+    E --> F[Front-end Updates Scoreboard]
+    C -->|Invalid| G[Return Error]
+```
+
 
 ## Score Retrieval Diagram
-![Score Retrieval Diagram](images/score_retrieval_diagram.png)
+```mermaid
+graph TD;
+    A[User Requests Scoreboard] --> B[Front-end Sends API Call];
+    B --> C[API Processes Request];
+    C --> D[Retrieve Top Scores from Database];
+    D --> E[Send Scores Back to Front-end];
+    E --> F[Front-end Displays Scores];
+```
 
 ## Security Measures
 - **Authorization**: Each API call needs a token to verify the user.
