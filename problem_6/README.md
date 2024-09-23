@@ -56,7 +56,7 @@ This document is for the Scoreboard API module. It is used to update user scores
 - **Input Validation**: Check the input data to stop bad data.
 
 ## Additional Comments
-- **Documentation Clarity**: It would be better if everything was clearer.
+- **Documentation Clarity**: It would be better if everything was clearer. Like, what is an action and where it's ID come from
 - **Versioning**: It may be good to version the API.
 - **Testing**: Testing is important.
 - **Logging**: Logging actions can help track problems.
