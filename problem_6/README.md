@@ -45,10 +45,10 @@ This document is for the Scoreboard API module. It is used to update user scores
     ```
 
 ## Execution Flow Diagram
-![Execution Flow Diagram]()
+![Execution Flow Diagram](images/execution_flow_diagram.png)
 
 ## Score Retrieval Diagram
-![Score Retrieval Diagram]()
+![Score Retrieval Diagram](images/score_retrieval_diagram.png)
 
 ## Security Measures
 - **Authorization**: Each API call needs a token to verify the user.
