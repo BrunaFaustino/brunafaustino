@@ -6,9 +6,9 @@ This document is for the Scoreboard API module. It is used to update user scores
 ## Requirements
 1. **Display Scores**: The application must show the top 10 user scores.
 2. **Live Updates**: The scoreboard should update in real time when scores change.
-3. **User Actions**: Users perform actions that will increase their scores. We do not need to explain these actions.
+3. **User Actions**: Users perform actions that will increase their scores.
 4. **API Call**: When a user completes an action, an API call must be made to update their score.
-5. **Security**: We need to stop bad users from changing scores without permission.
+5. **Security**: We need to stop users from changing scores without permission.
 
 ## API Endpoints
 
@@ -25,8 +25,8 @@ This document is for the Scoreboard API module. It is used to update user scores
     ```
 - **Responses**:
     - **200 OK**: Score updated successfully.
-    - **400 Bad Request**: There is something wrong with the input, maybe the user ID is wrong.
-    - **401 Unauthorized**: The user is not allowed, but I do not know how to fix this.
+    - **400 Bad Request**: There is something wrong with the input.
+    - **401 Unauthorized**: The user is not allowed.
     - **500 Internal Server Error**: There is a problem with the server.
 
 ### 2. Get Top Scores
@@ -56,10 +56,10 @@ This document is for the Scoreboard API module. It is used to update user scores
 - **Input Validation**: Check the input data to stop bad data.
 
 ## Additional Comments
-- **Documentation Clarity**: It would be better if everything was clearer, but it is okay.
-- **Versioning**: It may be good to version the API, but I do not know how to do this.
-- **Testing**: Testing is important, but I am not sure how to write tests yet.
-- **Logging**: Logging actions can help track problems, but I do not know how to implement it.
+- **Documentation Clarity**: It would be better if everything was clearer.
+- **Versioning**: It may be good to version the API.
+- **Testing**: Testing is important.
+- **Logging**: Logging actions can help track problems.
 
 ## Conclusion
 This document provides a basic specification for the Scoreboard API module. It should help the backend team to implement the necessary features. If there are questions, please ask!
